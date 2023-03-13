@@ -1,0 +1,17 @@
+/* import bootstrap to set changes */
+/* make the customizations */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-primary {
+	//background-color: #8064A2;
+}
+
+.volume-slider {
+	accent-color: #29575b;
+}
+
+$theme-colors: (
+  "kellogg-primary": #4F2582
+);
+
+$primary: #4F2582;

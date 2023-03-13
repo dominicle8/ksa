@@ -1,0 +1,56 @@
+[
+	{
+		"name": "Alice Zhang",
+		"title": "President",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Sam Elmer",
+		"title": "VP of Academics",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Cassandra Esinaulo",
+		"title": "VP of Careers",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Aaren Barge",
+		"title": "VP of Clubs and Finance",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Yvette Anguiano",
+		"title": "VP of DEI",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Goro Suzuki",
+		"title": "VP of Global Affairs",
+		"description": "MMM 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Will Engellenner",
+		"title": "VP of PPD",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Tanjeria Crite",
+		"title": "VP of Socail",
+		"description": "MMM 2024",
+		"thumbnailPath": "test.png"
+	},
+	{
+		"name": "Ruta Patel",
+		"title": "VP of Technology",
+		"description": "2Y 2024",
+		"thumbnailPath": "test.png"
+	}
+]

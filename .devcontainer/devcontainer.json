@@ -1,0 +1,24 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["dsznajder.es7-react-js-snippets", ]
+    }
+  },
+  "remoteUser": "root"
+
+/*
+
+  "forwardPorts": [3000],
+
+  "features": {
+    "ghcr.io/devcontainers/features/git": {
+        "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/common-utils": {
+        "version": "latest"
+    }
+  }
+*/
+}
