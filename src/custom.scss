@@ -1,17 +1,67 @@
 /* import bootstrap to set changes */
 /* make the customizations */
+$primary: #4F2582;
+$secondary: #EAEAEA;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@font-face {
+	font-family:"feeling_passionate";
+	src: url(static/fonts/feeling_passionate_subset.otf);
+}
+
+@font-face {
+	font-family:"gotham";
+	src: url(static/fonts/GothamBook.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family:"gotham";
+	src: url(static/fonts/GothamLight.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family:"gotham";
+	src: url(static/fonts/GothamBold.ttf);
+	font-style: bold;
+	font-weight: bold;
+}
+
+$headings-font-family: "gotham", sans-serif; //"petrona", serif;
+$font-family-sans-serif: "gotham", sans-serif;
+
+.lead-lg {
+	@extend .lead;
+	font-size: $lead-font-size * 2 !important;
+}
+
+h1 {
+	font-weight: bold !important;
+}
+
+nav .navbar-nav a {
+	color: white;
+	&:hover {
+		color: #4A4A4A;
+	}
+	&.active:hover {
+		color: #4A4A4A;
+	}
+	
+	@include media-breakpoint-up(xl) {
+		font-size: x-large;
+	}
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.btn-primary {
-	//background-color: #8064A2;
+.navbar-brand {
+	font-family: "petrona", serif;
+	@include media-breakpoint-up(xl) {
+		font-size: xx-large;
+	}
 }
-
-.volume-slider {
-	accent-color: #29575b;
-}
-
-$theme-colors: (
-  "kellogg-primary": #4F2582
-);
-
-$primary: #4F2582;
