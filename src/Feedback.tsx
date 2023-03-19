@@ -43,7 +43,7 @@ function Feedback() {
 						<Form.Group controlId="formFeedback">
 							<Form.Control as="textarea" placeholder="" rows={12} style={{}} maxLength={40000} ref={feedbackText} disabled={isSubmitted} />
 						</Form.Group>
-						<Button variant="warning" type="submit" className="mt-3 float-end" style={{}} defaultValue="This is a test" disabled={isSubmitted}>
+						<Button variant="warning" type="submit" className="mt-3 float-end" style={{}} disabled={isSubmitted}>
 							Submit
 						</Button>
 						<div style={{visibility: isSubmitted ? "visible" : "hidden"}}>
