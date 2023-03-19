@@ -31,16 +31,18 @@ function Content() {
 					}
 					</div>
 				</Col>
-				<Row className="d-flex justify-content-center align-items-center pt-4 d-lg-none">
-						{
-							teamMembers.map((teamMember, i) => 
-								<Col xs={6} sm={4} key={i} className='p-2'>
-									<h5 className="text-center mb-0"><b>{teamMember.name}</b></h5>
-									<p className="text-center mb-1" style={{fontWeight: "lighter"}}>{teamMember.title}</p>
-								</Col>
-							)
-						}
-				</Row>
+				<Col>
+					<Row className="d-flex justify-content-center align-items-center pt-4 d-lg-none">
+							{
+								teamMembers.map((teamMember, i) => 
+									<Col xs={6} sm={4} key={i} className='p-2'>
+										<h5 className="text-center mb-0"><b>{teamMember.name}</b></h5>
+										<p className="text-center mb-1" style={{fontWeight: "lighter"}}>{teamMember.title}</p>
+									</Col>
+								)
+							}
+					</Row>
+				</Col>
 			</Row>
 			<OurValues/>
 			{/*

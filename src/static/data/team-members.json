@@ -6,6 +6,12 @@
 		"thumbnailPath": "alice.jpeg"
 	},
 	{
+		"name": "Yvette Anguiano",
+		"title": "EVP of DEI",
+		"description": "2Y 2024",
+		"thumbnailPath": "yvette.jpeg"
+	},
+	{
 		"name": "Sam Elmer",
 		"title": "VP of Academics",
 		"description": "2Y 2024",
@@ -22,12 +28,6 @@
 		"title": "VP of Clubs and Finance",
 		"description": "2Y 2024",
 		"thumbnailPath": "aaren.jpeg"
-	},
-	{
-		"name": "Yvette Anguiano",
-		"title": "VP of DEI",
-		"description": "2Y 2024",
-		"thumbnailPath": "yvette.jpeg"
 	},
 	{
 		"name": "Goro Suzuki",
