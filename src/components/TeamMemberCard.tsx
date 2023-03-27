@@ -35,8 +35,8 @@ function TeamMemberCard({name, title, description, thumbnailPath}: TeamMemberPro
 							<p className='mb-0 p-3 pt-0 pb-2'>{title}</p>
 						</div>
 					</div>
-					<div className="card__face card__face--back secondary-bg d-flex">
-						<p className='lead-lg text-center align-items-center my-auto ms-auto me-auto'>back text</p>
+					<div className="card__face card__face--back secondary-bg d-flex h-100 w-100" style={{overflow: "scroll", overflowX: "hidden", overflowY: "auto"}}>
+						<p className='lead text-center align-items-center my-auto ms-auto me-auto p-3'>{description}</p>
 					</div>
 				</div>
 

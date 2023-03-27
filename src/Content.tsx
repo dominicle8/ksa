@@ -12,7 +12,7 @@ function Content() {
 
 	return (
 		<Container fluid className=''>
-			<Row className="gradient-bg pb-5 pt-4">
+			<Row className="gradient-bg pb-0 pt-4">
 				<Col lg={9}>
 					<Image src={GroupImage} fluid className='w-100' style={{}}/>
 				</Col>

@@ -4,14 +4,15 @@ import TeamMemberCard from './components/TeamMemberCard';
 import { Pillar } from './DTO/pillar';
 import { TeamMember } from './DTO/team-member';
 import { KeyInitiatives } from './static/data/key-initiatives';
+import { Link } from 'react-router-dom'
 
 function OurValues() {
 	const n = 3;
 	const ourPillars: Pillar[] = require('./static/data/pillars.json')
 	return (
-		<Row className="grey-bg p-5" id="pillars">
+		<Row className="konnecting-kellogg-bg p-5" id="pillars">
 			<Col sm={12}>
-				<h1 className="display-6">Our Pillars</h1>
+				<h1 className="display-6">Our Pillars <Link to="/dei"><Button variant="warning" type="submit" className="btn-xs" style={{}}>Learn More</Button></Link></h1>
 			</Col>
 			{
 				ourPillars.map((pillar, i) => 

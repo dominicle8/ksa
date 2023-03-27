@@ -17,6 +17,14 @@ function PillarPart({pillar}: PillarPartProps) {
 	if(thumbnail === ''){
 		import(`../static/images/${pillar.thumbnailPath}`).then((module) => setThumbnail(module.default));
 	}
+	let additionalInfo;
+	if(pillar.name === "Redefined Experience"){
+		additionalInfo = <Col md={12} className="d-flex ps-5 pe-5">
+			<p style={{}} className="lead p-3 ms-auto me-auto highlight-bg">We believe DEI should be weaved into every aspect of Kellogg. Learn more about how we’re doing that here.</p>
+		</Col>
+	} else {
+
+	}
 	
 	return (
 		<Row className="pt-5 pb-3">
@@ -25,7 +33,7 @@ function PillarPart({pillar}: PillarPartProps) {
 					<Image src={thumbnail} fluid className='w-50' style={{}}/>
 				</div>
 			</Col>
-			<Col md={8} className="p-3">
+			<Col md={8} className="p-3 pillar-body">
 				<h3 style={{}} className="display-6"><b>{pillar.name}</b></h3>
 				{
 					pillar.body.map((body, j) => 
@@ -33,6 +41,7 @@ function PillarPart({pillar}: PillarPartProps) {
 					)
 				}
 			</Col>
+			{additionalInfo}
 		</Row>
 	);
 }

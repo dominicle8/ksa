@@ -22,9 +22,25 @@
 	color: white;
 }
 
+.highlight-bg {
+	background: #EBAA2040;
+}
+
 .gradient-bg {
 	background: $primary;
 	background: linear-gradient(0deg, $primary 75%, #005f73 100%);
+	color: white;
+}
+
+.konnecting-kellogg-bg {
+	background-image: url('static/images/kk-bg.png');
+	background-size: auto 100%;
+
+	object-fit: cover;
+	@include media-breakpoint-up(md) {
+		background-size: 100% 100%;
+	}
+	background-repeat: no-repeat;
 	color: white;
 }
 
@@ -36,13 +52,49 @@
 	color: white;
 }
 
-.pillars-bg {
+.img-bg {
 	min-width: 100%;
 	height: auto;
-	background-image: url('static/images/pillars-bg.jpg');
+	background: $secondary;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	color: white;
+}
+
+.dei-bg {
+	@extend .img-bg;
+	background-image: url('static/images/dei-xs.jpeg');
+	@include media-breakpoint-up(md) {
+		background-image: url('static/images/dei.jpeg');
+	}
+}
+
+.pillars-bg {
+	@extend .img-bg;
+	background-image: url('static/images/pillars-bg-xs.jpg');
+	@include media-breakpoint-up(md) {
+		background-image: url('static/images/pillars-bg.jpg');
+	}
+}
+
+.pillar-body {
+	padding-left: 2.5rem !important;
+	padding-right: 2.5rem !important;
+
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+		padding-left: 0rem !important;
+	}
+	@include media-breakpoint-up(lg) {
+		padding-right: 5rem !important;
+	}
+	@include media-breakpoint-up(xl) {
+		padding-right: 8rem !important;
+	}
+	@include media-breakpoint-up(xxl) {
+		padding-right: 12rem !important;
+	}
 }
 
 .banner-img {
@@ -52,7 +104,23 @@
 }
 
 .banner-overlay {
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.80);
+	
+	@include media-breakpoint-up(sm) {
+		width: 90%;
+	}
+	@include media-breakpoint-up(md) {
+		width: 80%;
+	}
+	@include media-breakpoint-up(lg) {
+		width: 60%;
+	}
+	@include media-breakpoint-up(xl) {
+		width: 50%;
+	}
+	@include media-breakpoint-up(xxl) {
+		width: 40%;
+	}
 }
 
 // overlay elements need to be encompassed by an element with position=relative
@@ -120,18 +188,20 @@
 
 
 .navbar-item-padding {
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		padding-left: .75rem !important;
 		padding-right: .75rem !important;
 	}
 }
 
 .navbar-hover {
-	height: 100%;
-	display: flex !important;
-	align-items: center !important;
-	&:hover {
-		background-color: black;
+	@include media-breakpoint-up(md) {
+		height: 100%;
+		display: flex !important;
+		align-items: center !important;
+		&:hover {
+			background-color: black;
+		}
 	}
 }
 
@@ -167,6 +237,13 @@
 		padding: 5rem;
 	}
 }
+
+.btn-xs {
+	padding: .075rem .4rem .075rem .4rem;
+	font-size: .6rem;
+	border-radius: .15rem;
+}
+
 
 .scene {
   //perspective: 100em;

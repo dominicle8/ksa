@@ -2,7 +2,7 @@ import { Image, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
 import SlackLogo from './static/images/slack-mark-white.svg'
 import InstagramLogo from './static/images/Instagram_Glyph_White.svg'
 import { LinkContainer } from 'react-router-bootstrap'
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function Navigation() {
 	const [show, setShow] = useState(false);
@@ -12,14 +12,38 @@ function Navigation() {
 	const hideDropdown = () => {
 		setShow(false);
 	}
-	const onToggle = () => {
+
+	const onClick = () => {
 		window.location.href = '#pillars';
+		if(!isMobile){
+			setShow(false);
+		} else {
+		}
 	}
+
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+	
+	const handleResize = () => {
+		if (window.innerWidth < 768) {
+			setIsMobile(true)
+		} else {
+			setIsMobile(false)
+		}
+	}
+
+	useEffect(() => {
+		window.addEventListener("resize", handleResize)
+	})
 
 	return (
 		<Navbar sticky="top" collapseOnSelect expand="md" className='ps-3 pe-3 primary-bg navbar-dark'>
 			<Nav className="me-auto d-flex flex-row d-md-none">
 				{/* <Nav.Link style={{fontFamily:"feeling_passionate", pointerEvents:"none"}}>Join Us</Nav.Link>*/}
+				<LinkContainer to="/">
+					<Nav.Link href="/" className="navbar-header">
+						KONNECTING KELLOGG
+					</Nav.Link>
+				</LinkContainer>
 				<Nav.Link href="https://www.instagram.com/konnectingkellogg/" className="ps-3 pe-2 d-flex" target="_blank">
 					<Image src={InstagramLogo} style={{width: "20px"}} className="darken-hover"/>
 				</Nav.Link>
@@ -28,26 +52,26 @@ function Navigation() {
 				</Nav.Link>
 			</Nav>
 			<Navbar.Toggle className="" aria-controls="navbar-nav" />
-			<Navbar.Offcanvas id="navbar-nav"  placement="end">
+			<Navbar.Offcanvas id="navbar-nav" placement="end">
 				<Offcanvas.Header closeButton className="pb-0">
 					<Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
 						Konnecting Kellogg
 					</Offcanvas.Title>
 				</Offcanvas.Header>
 				<Offcanvas.Body style={{}} className="">
-					<Nav className="ma-auto align-items-center d-flex">
-						<NavDropdown title="Our Pillars" id="basic-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={hideDropdown} onToggle={onToggle}>
+					<Nav className="ma-auto">
+						<NavDropdown title="Our Pillars" id="basic-nav-dropdown" show={show || isMobile} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={onClick}>
 							<LinkContainer to="/pillars">
 								<NavDropdown.Item>Overview</NavDropdown.Item>
 							</LinkContainer>
-							<LinkContainer to="/pillars">
+							<LinkContainer to="/dei">
 								<NavDropdown.Item>DEI @ Kellogg</NavDropdown.Item>
 							</LinkContainer>
 						</NavDropdown>
 						<Nav.Link href="/#team" className="navbar-item-padding navbar-hover">Our Team</Nav.Link>
 						<Nav.Link href="#feedback" className="navbar-hover">Your Thoughts</Nav.Link>
 					</Nav>
-					<Nav className="ms-auto me-auto d-flex flex-row">
+					<Nav className="ms-auto me-auto d-none d-md-flex flex-row">
 						<LinkContainer to="/" className="">
 							<Nav.Link className="navbar-header">
 								KONNECTING KELLOGG
