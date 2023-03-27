@@ -44,6 +44,22 @@ h1 {
 	font-weight: bold !important;
 }
 
+nav {
+
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(xxl) {
+	}
+}
+
 nav .navbar-nav a {
 	color: white;
 	&:hover {
@@ -56,6 +72,35 @@ nav .navbar-nav a {
 	@include media-breakpoint-up(xl) {
 		font-size: x-large;
 	}
+}
+
+.nav-item {
+	display: flex !important;
+	align-items: center !important;
+	a {
+		&:hover {
+			color: #4A4A4A;
+		}
+	}
+	&:hover {
+		background: black !important;
+	}
+	height: 100% !important;
+}
+
+.dropdown-menu {
+	border-radius: 0 !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.dropdown-item {
+	background: black !important;
+}
+
+.dropdown-toggle::after {
+	display: none !important;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

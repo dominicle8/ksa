@@ -1,16 +1,29 @@
-import { Image, Nav, Navbar, Offcanvas} from 'react-bootstrap';
+import { Image, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
 import SlackLogo from './static/images/slack-mark-white.svg'
 import InstagramLogo from './static/images/Instagram_Glyph_White.svg'
+import { LinkContainer } from 'react-router-bootstrap'
+import { useState } from 'react';
 
 function Navigation() {
+	const [show, setShow] = useState(false);
+	const showDropdown = () => {
+		setShow(true);
+	}
+	const hideDropdown = () => {
+		setShow(false);
+	}
+	const onToggle = () => {
+		window.location.href = '#pillars';
+	}
+
 	return (
-		<Navbar sticky="top" collapseOnSelect expand="sm" className='ps-3 pe-3 primary-bg navbar-dark'>
-			<Nav className="me-auto d-flex flex-row d-sm-none">
-				<Nav.Link style={{fontFamily:"feeling_passionate", pointerEvents:"none"}}>Join Us</Nav.Link>
+		<Navbar sticky="top" collapseOnSelect expand="md" className='ps-3 pe-3 primary-bg navbar-dark'>
+			<Nav className="me-auto d-flex flex-row d-md-none">
+				{/* <Nav.Link style={{fontFamily:"feeling_passionate", pointerEvents:"none"}}>Join Us</Nav.Link>*/}
 				<Nav.Link href="https://www.instagram.com/konnectingkellogg/" className="ps-3 pe-2 d-flex" target="_blank">
 					<Image src={InstagramLogo} style={{width: "20px"}} className="darken-hover"/>
 				</Nav.Link>
-				<Nav.Link href="" className="p-0 d-flex">
+				<Nav.Link href="https://app.slack.com/client/T0AUF6SQ7/C050CDUJDEY" className="p-0 d-flex" target="_blank">
 					<Image src={SlackLogo} style={{width: "40px"}} className="darken-hover"/>
 				</Nav.Link>
 			</Nav>
@@ -21,20 +34,35 @@ function Navigation() {
 						Konnecting Kellogg
 					</Offcanvas.Title>
 				</Offcanvas.Header>
-				<Offcanvas.Body>
-					<Nav className="ma-auto">
-						<Nav.Link href="#pillars">Our Pillars</Nav.Link>
-						<Nav.Link href="#team" className="navbar-item-padding">Our Team</Nav.Link>
-						<Nav.Link href="#feedback">Your Thoughts</Nav.Link>
+				<Offcanvas.Body style={{}} className="">
+					<Nav className="ma-auto align-items-center d-flex">
+						<NavDropdown title="Our Pillars" id="basic-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={hideDropdown} onToggle={onToggle}>
+							<LinkContainer to="/pillars">
+								<NavDropdown.Item>Overview</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/pillars">
+								<NavDropdown.Item>DEI @ Kellogg</NavDropdown.Item>
+							</LinkContainer>
+						</NavDropdown>
+						<Nav.Link href="/#team" className="navbar-item-padding navbar-hover">Our Team</Nav.Link>
+						<Nav.Link href="#feedback" className="navbar-hover">Your Thoughts</Nav.Link>
+					</Nav>
+					<Nav className="ms-auto me-auto d-flex flex-row">
+						<LinkContainer to="/" className="">
+							<Nav.Link className="navbar-header">
+								KONNECTING KELLOGG
+							</Nav.Link>
+						</LinkContainer>
 					</Nav>
 				</Offcanvas.Body>
+
 			</Navbar.Offcanvas>
-			<Nav className="ms-auto flex-row d-none d-sm-flex">
-				<Nav.Link style={{fontFamily:"feeling_passionate", pointerEvents:"none"}}>Join Us</Nav.Link>
+			<Nav className="ms-auto flex-row d-none d-md-flex">
+				{/* <Nav.Link style={{fontFamily:"feeling_passionate", pointerEvents:"none"}}>Join Us</Nav.Link>*/}
 				<Nav.Link href="https://www.instagram.com/konnectingkellogg/" className="ps-3 pe-3 d-flex" target="_blank">
 					<Image src={InstagramLogo} style={{width: "20px"}} className="darken-hover"/>
 				</Nav.Link>
-				<Nav.Link href="#home" className="p-0 d-flex">
+				<Nav.Link href="https://app.slack.com/client/T0AUF6SQ7/C050CDUJDEY" className="p-0 d-flex" target="_blank">
 					<Image src={SlackLogo} style={{width: "40px"}} className="darken-hover"/>
 				</Nav.Link>
 			</Nav>

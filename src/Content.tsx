@@ -5,17 +5,14 @@ import { TeamMember } from './DTO/team-member';
 import Feedback from './Feedback';
 import OurValues from './OurValues';
 import { KeyInitiatives } from './static/data/key-initiatives';
-import GroupImage from './static/images/group.jpg'
+import GroupImage from './static/images/group.jpeg'
 
 function Content() {
 	const teamMembers: TeamMember[] = require('./static/data/team-members.json')
 
 	return (
 		<Container fluid className=''>
-			<Row className="gradient-bg pb-5">
-				<Col lg={12}>
-					<h1 className="display-1 text-center pb-4" style={{color: "white", fontWeight: "bold"}}>KONNECTING KELLOGG</h1>
-				</Col>
+			<Row className="gradient-bg pb-5 pt-4">
 				<Col lg={9}>
 					<Image src={GroupImage} fluid className='w-100' style={{}}/>
 				</Col>
@@ -69,7 +66,6 @@ function Content() {
 			</Row>
 			<DividedText textArray={KeyInitiatives}/>
 			*/}
-			<Feedback/>
 		</Container>
 	);
 }

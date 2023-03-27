@@ -18,7 +18,7 @@ function OurValues() {
 					<Col md={4} className="p-3" key={i}>
 						<div style={{width: "100%", backgroundColor:"white"}} className="ratio ratio-1x1">
 								<div style={{color:"black"}} className="d-flex justify-content-center align-items-center pillar-container">
-									<div>
+									<div className="text-center">
 										<h3 style={{}} className="display-6"><b>{pillar.name}</b></h3>
 										<p style={{}} className="lead">{pillar.description}</p>
 									</div>

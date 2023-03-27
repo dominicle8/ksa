@@ -24,8 +24,35 @@
 
 .gradient-bg {
 	background: $primary;
-	background: linear-gradient(90deg, $primary 75%, #005f73 100%);
+	background: linear-gradient(0deg, $primary 75%, #005f73 100%);
 	color: white;
+}
+
+.talk-to-us-bg {
+	width: 100%;
+	background-image: url('static/images/talk-to-us-bg.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.pillars-bg {
+	min-width: 100%;
+	height: auto;
+	background-image: url('static/images/pillars-bg.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.banner-img {
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+}
+
+.banner-overlay {
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
 // overlay elements need to be encompassed by an element with position=relative
@@ -67,10 +94,44 @@
 	filter: brightness(25%);
 }
 
+.navbar-header {
+	font-weight: bold;
+	display: flex !important;
+	align-items: center !important;
+	&:hover {
+		color: white !important;
+	}
+
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+		font-size: 1.4em !important;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 2.4em !important;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(xxl) {
+		padding: 0;
+		font-size: 3.65em !important;
+	}
+}
+
+
 .navbar-item-padding {
 	@include media-breakpoint-up(sm) {
-		padding-left: 1.75rem !important;
-		padding-right: 1.75rem !important;
+		padding-left: .75rem !important;
+		padding-right: .75rem !important;
+	}
+}
+
+.navbar-hover {
+	height: 100%;
+	display: flex !important;
+	align-items: center !important;
+	&:hover {
+		background-color: black;
 	}
 }
 

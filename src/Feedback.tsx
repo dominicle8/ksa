@@ -30,7 +30,7 @@ function Feedback() {
 	}
 
 	return (
-		<Row className="gradient-bg p-5" id="feedback">
+		<Row className="talk-to-us-bg p-5 m-0" id="feedback">
 			<Col sm={12}>
 				<h1 className="display-6">Talk to Us</h1>
 			</Col>

@@ -1,14 +1,32 @@
 [
 	{
 		"name": "Intentional Connections",
-		"description": "Promote purposeful community building across Kellogg to foster a more inclusively diverse environment"
+		"description": "Promote purposeful community building across Kellogg to foster a more inclusively diverse environment",
+		"body": [
+			"Bridging Our Differences: Serve as the bridge between regional, affinity, and faith groups to foster multi-dimensional collaboration, learning, and mutual support for club events and students of all backgrounds.",
+			"Prepare for Future Cohorts: Help students stay ahead of the information overload curve during Fall quarter by establishing a process for clubs to reach out to incoming students earlier.",
+			"Continue the Momentum: Build upon this year's initiatives (e.g., Global Spoon, Analytics for Inclusion) with additional formal programming."
+		],
+		"thumbnailPath": "int-conn.png"
 	},
 	{
 		"name": "Proactive Career Support",
-		"description": "Ensure students are properly supported in all recruiting circumstances (e.g., traditional, non-traditional, multiple career paths, re-recruiting"
+		"description": "Ensure students are properly supported in all recruiting circumstances (e.g., traditional, non-traditional, multiple career paths, re-recruiting",
+		"body": [
+			"Strengthen Foundational Skills: Enhance current resources with KSA-led hard skills training series in addition to tailoring IPG offerings for specific student needs & recruiting circumstances.",
+			"Destigmatize Re-recruiting: Expand recruiting process to include re-recruitment best practices and workshops for students that pivot industries and recruit for multiple career paths.",
+			"Share Resources & Leverage Alumni: Maximize Kellogg's broad range of resources by facilitating connections between clubs in connected industries and hosting alumni panels to discuss post-MBA career decisions."
+		],
+		"thumbnailPath": "pro-career.png"
 	},
 	{
-		"name": "Continuous Improvement",
-		"description": "Anticipate student & club needs and enhance collaboration with KSA to overcome future challenges together"
+		"name": "Redefined Experience",
+		"description": "Augment Kellogg traditions and current systems by emphasizing inclusivity and accessibility",
+		"body": [
+			"Put Inclusivity at the Forefront: Plan classic marquee events to include new features focused on improving the experience for all drinking preferences and financial circumstances.",
+			"Champion DEI in Class: Partner with administration to continuously improve core DEI class, and identify thought leaders to teach and speak at Kellogg.",
+			"Improve Technology Accessibility: Work with student organizations to develop tools for streamlining operations, and partner with KIS to improve ease of use for existing tech systems."
+		],
+		"thumbnailPath": "redefined.png"
 	}
 ]
