@@ -36,7 +36,7 @@ function PillarsPage() {
 				)
 			}
 			<Row className="pt-5">
-				<Col md={6} className="d-flex">
+				<Col md={6} className="d-flex" style={{backgroundColor:"#EEEEEE"}}>
 					<div className="align-items-center ms-auto me-auto my-auto pillar-square">
 						<h3 style={{}} className="display-6"><b>Including Partners & Families on Campus</b></h3>
 						<p style={{}} className="lead">As a team with working JVs and children, we really care about the resources that Kellogg provides for our partners and families. We want to making the current resources more accessible through a dedicated JV portal, and introduce new tools that may be helpful e.g., crowd-sourced childcare board. Our partners uproot their lives and move with us to Evanston – we envision a more integrated culture where JVs fit seamlessly into Hub life.</p>
@@ -48,7 +48,7 @@ function PillarsPage() {
 				<Col md={6} className="p-0 d-md-flex d-none">
 					<Image src={StockImage1} fluid className='w-100'/>
 				</Col>
-				<Col md={6} className="d-flex">
+				<Col md={6} className="d-flex" style={{backgroundColor:"#EEEEEE"}}>
 					<div className="align-items-center ms-auto me-auto my-auto pillar-square">
 						<h3 style={{}} className="display-6"><b>Building a Stronger Cross-cultural Community</b></h3>
 						<p style={{}} className="lead">With all the cultures and faiths at Kellogg, we can learn so much from each other. We want to create a new Kellogg marquee event – a Multicultural Fair in the winter or spring (think club fair part 2, now that first years have had a chance to find their groups) where communities can showcase their traditions, beliefs, cultural clothing, food, and more. This way, we can teach each other and connect over what we value and how we celebrate in everyday life.</p>
