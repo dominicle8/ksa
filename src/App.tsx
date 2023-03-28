@@ -3,14 +3,13 @@ import Content from './Content';
 import Feedback from './Feedback';
 import { Container } from 'react-bootstrap';
 import PillarsPage from './PillarsPage';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom"
 import ScrollToTop from './components/ScrollToTop';
 import DeiPage from './DeiPage';
 
 function App() {
 	return (
-		<React.StrictMode>
 			<BrowserRouter>
 				<ScrollToTop/>
 				<Navigation/>
@@ -21,7 +20,6 @@ function App() {
 					</Routes>
 				<Feedback/>
 			</BrowserRouter>
-		</React.StrictMode>
 	);
 }
 

@@ -12,7 +12,7 @@ function OurValues() {
 	return (
 		<Row className="konnecting-kellogg-bg p-5" id="pillars">
 			<Col sm={12}>
-				<h1 className="display-6">Our Pillars <Link to="/dei"><Button variant="warning" type="submit" className="btn-xs" style={{}}>Learn More</Button></Link></h1>
+				<h1 className="display-6">Our Pillars <Link to="/pillars"><Button variant="warning" type="submit" className="learn-more-btn" style={{}}>Learn More</Button></Link></h1>
 			</Col>
 			{
 				ourPillars.map((pillar, i) => 

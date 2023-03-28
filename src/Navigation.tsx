@@ -1,10 +1,12 @@
-import { Image, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
+import { Image, Nav, Navbar, NavDropdown, NavItem, Offcanvas} from 'react-bootstrap';
 import SlackLogo from './static/images/slack-mark-white.svg'
 import InstagramLogo from './static/images/Instagram_Glyph_White.svg'
 import { LinkContainer } from 'react-router-bootstrap'
-import { useEffect, useRef, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom'
+import { MouseEvent, MouseEventHandler, useEffect, useRef, useState } from 'react';
 
 function Navigation() {
+	const navigate = useNavigate();
 	const [show, setShow] = useState(false);
 	const showDropdown = () => {
 		setShow(true);
@@ -13,12 +15,19 @@ function Navigation() {
 		setShow(false);
 	}
 
-	const onClick = () => {
-		window.location.href = '#pillars';
+	const onClick = (ev : MouseEvent<HTMLElement>) => {
+		console.log("click")
+		let element = ev.target as HTMLElement;
+		if(element.id === "basic-nav-dropdown"){
+			navigate('/#pillars');
+		}
 		if(!isMobile){
 			setShow(false);
 		} else {
 		}
+	}
+	const forceNavigation = () => {
+		navigate('/#team');
 	}
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
@@ -36,7 +45,7 @@ function Navigation() {
 	})
 
 	return (
-		<Navbar sticky="top" collapseOnSelect expand="md" className='ps-3 pe-3 primary-bg navbar-dark'>
+		<Navbar sticky="top" collapseOnSelect expand="md" className='ps-3 pe-3 primary-bg navbar-dark' style={{zIndex: "9000"}}>
 			<Nav className="me-auto d-flex flex-row d-md-none">
 				{/* <Nav.Link style={{fontFamily:"feeling_passionate", pointerEvents:"none"}}>Join Us</Nav.Link>*/}
 				<LinkContainer to="/">
@@ -68,7 +77,7 @@ function Navigation() {
 								<NavDropdown.Item>DEI @ Kellogg</NavDropdown.Item>
 							</LinkContainer>
 						</NavDropdown>
-						<Nav.Link href="/#team" className="navbar-item-padding navbar-hover">Our Team</Nav.Link>
+						<Link className='navbar-item-padding navbar-hover navbar-hover nav-link' to="/#team" onClick={forceNavigation}>Our Team</Link>
 						<Nav.Link href="#feedback" className="navbar-hover">Your Thoughts</Nav.Link>
 					</Nav>
 					<Nav className="ms-auto me-auto d-none d-md-flex flex-row">

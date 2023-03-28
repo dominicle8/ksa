@@ -37,7 +37,7 @@ function PillarPart({pillar}: PillarPartProps) {
 				<h3 style={{}} className="display-6"><b>{pillar.name}</b></h3>
 				{
 					pillar.body.map((body, j) => 
-						<p style={{}} className="lead mb-3">{body}</p>
+						<p key={j} style={{}} className="lead mb-3">{body}</p>
 					)
 				}
 			</Col>
