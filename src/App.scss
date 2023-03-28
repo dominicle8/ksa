@@ -114,6 +114,44 @@ html {
 	}
 }
 
+.pillar-square {
+	padding: 2rem;
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+		padding: 0;
+		width: 90%;
+		p {
+			font-size: .93rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+		width: 90%;
+		p {
+			font-size: 1rem;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+		width: 80%;
+		p {
+			font-size: 1.25rem;
+		}
+		h3 {
+			font-size: 2.5rem;
+		}
+	}
+	@include media-breakpoint-up(xxl) {
+		width: 70%;
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
+}
+
 .dei-body {
 	@extend .pillar-body;
 	overflow-wrap: break-word;

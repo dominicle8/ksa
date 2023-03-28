@@ -20,7 +20,7 @@ interface DeiSection {
 }
 
 function DeiPage() {
-	let _ = ScrollSpy;
+	let scrollSpy = ScrollSpy;
 	let sections : DeiSection[] = [
 		{
 			id: "ongoing-activities",
@@ -51,12 +51,8 @@ function DeiPage() {
 					displayName: "First-Generation and/or Low-Income Identifying Students"
 				},
 				{
-					id: "one-y-program",
-					displayName: "1Y Program"
-				},
-				{
 					id: "disc-dei",
-					displayName: "Discrimination, Microaggressions, and DEI"
+					displayName: "Furthering Inclusion"
 				},
 				{
 					id: "cross-collab",
@@ -69,6 +65,13 @@ function DeiPage() {
 			]
 		}
 	];
+
+	useEffect(() => {
+		const scrollSpyElement = document.querySelector('[data-bs-spy="scroll"]');
+		if(scrollSpyElement != null) {
+			scrollSpy.getInstance(scrollSpyElement)?.refresh();
+		}
+	});
 	
 	const scrollOverride = (ev: MouseEvent<HTMLElement>) => {
 		let element = ev.target as HTMLElement;
@@ -138,6 +141,7 @@ function DeiPage() {
 								<li>Revamp marketing and understanding of role as anyone who is interested in helping promote inclusion and belonging through open student attendance at Affinity and Regional Club Events.</li>
 								<li>Involve Ambassadors in Allyship Council meetings with Affinity and Regional Club Leadership to discuss strategies and initiatives for involving students interested in joining and learning more about clubs and communities they wouldn't normally join.</li>
 							</ul>
+							<li>Create an <u>all-affinity allyship channel, newsletter, and shared calendar</u> to ensure there’s full awareness about affinity group events, intentionally avoid overlap, and support each other’s initiatives.</li>
 						</ul>
 					</ul>
 					</div>
@@ -146,58 +150,70 @@ function DeiPage() {
 						<li id="women">Women
 							<ul>
 								<li>Kellogg has done great work at reaching equality of genders within our classes, but women are still facing obstacles during their Kellogg experience.</li>
-								<li>Women are still oftentimes doing the project management and administrative activities for group projects in their classes.</li>
+								<li>Ensure equal distribution of project management and administrative activities for group projects in classes</li>
 								<ul>
-									<li>Solution(s):</li>
-									<li><u>Work with WBA to create a charter template</u> at the start of each class to ensure all parties in a group are fulfilling their duties as group members.</li>
-									<li><u>Implement a mid-point peer review</u> to address inequities in groups and work with professors to address groups needing action.</li>
+									<li>Action(s):</li>
+									<ul>
+										<li><u>Work with WBA to create a charter template</u> at the start of each class to ensure all parties in a group are fulfilling their duties as group members.</li>
+										<li><u>Implement a mid-point peer review</u> to address inequities in groups and work with professors to address groups needing action.</li>
+									</ul>
 								</ul>
 							</ul>
 						</li>
 						<li id="int-students" className="pt-4">International Students and Global Awareness
 						<ul>
-							<li>Our international student peers have found themselves in extremely life changing experiences, moving to a new country with limited networks of support systems in an effort to further their careers, grow personally, and connect with the diverse student body at Kellogg and yet, <u>international students face the additional challenge of feeling left out of the social experience with domestic students.</u></li>
+							<li>Our international student peers have found themselves in extremely life changing experiences by moving to a new country with limited networks and support systems in an effort to further their careers, grow personally, and connect with the diverse student body at Kellogg. Yet, some of our international student communities face the challenge of feeling left out of the social experience and local culture.</li>
 							<li>This is probably the most diverse environment students will ever experience and we need to take full advantage.</li>
 							<ul>
-								<li>Solution(s):</li>
-								<li>Work with VP of Social, VP of Global Affairs, and student groups to add a requirement for any <u>Kellogg sponsored social events to include a global lens</u> whether through international music inclusion or global cultural awareness.</li>
-								<li>Work with CIM committee and VP of Global Affairs to <u>add a global inclusion component</u> into the programming, encouraging discussion and empathetic listening of our international students' experiences and backgrounds.</li>
-								<li>Work with Kellogg Administration, Faculty, VP of Academics, and VP of Global Affairs to <u>review case studies, reading materials, and assignments</u> to ensure learnings are equally distributed across US and international business contexts and applications.</li>
+								<li>Action(s):</li>
+								<ul>
+									<li>Work with VP of Social, VP of Global Affairs, and student groups to add a requirement for any <u>Kellogg sponsored social events to include a global lens</u> whether through international music inclusion or global cultural awareness.</li>
+									<li>Work with CIM committee and VP of Global Affairs to <u>add a global inclusion component</u> into the programming, encouraging discussion and empathetic listening of our international students' experiences and backgrounds.</li>
+									<li>Work with Kellogg Administration, Faculty, VP of Academics, and VP of Global Affairs to <u>review case studies, reading materials, and assignments</u> to ensure learnings are equally distributed across US and international business contexts and applications.</li>
+								</ul>
 							</ul>
 						</ul>
 						</li>
-						<li id="bipoc-students" className="pt-4">BIPOC Students</li>
-						<li id="lgbtq-students" className="pt-4">LGBTQIA+ Students</li>
+						<li id="bipoc-students" className="pt-4">BIPOC Students
+							<ul>
+								<li>Work with Affinity Club Admissions teams and Admissions to evaluate current strategies for recruiting, accepting, and having BIPOC students matriculating to Kellogg, ensuring every step of the process considers systemic barriers these populations face and supports them throughout their application journey.</li>
+								<ul>
+									<li>Diversity Preview Day, Women Preview Day, Marketing, Testing Requirements, Application Fee Waivers, Application Reviews and Interview Prep</li>
+								</ul>
+								<li>Work with VP of Careers and VP of Professional and Personal Development to increase participation of CMC surveys, identify roadblocks BIPOC students face throughout the recruiting process (playing catch-up, limited networks, cultural differences affecting coffee chats and networking events), and implement additional support systems</li>
+							</ul>
+						</li>
+						<li id="lgbtq-students" className="pt-4">LGBTQIA+ Students
+							<ul>
+								<li>Now more than ever, the LGBTQIA+ and P@K community should receive full support from the student body and Kellogg.</li>
+								<ul>
+									<li>Action(s):</li>
+									<ul>
+										<li>Work closely with P@K Exec and administration to ensure commitments from previous quarters are followed through, including hiring more DEI faculty & inviting guest speakers, and continuing to support the community by condemning any form of discrimination.</li>
+									</ul>
+								</ul>
+							</ul>
+						</li>
 						<li id="first-gen-students" className="pt-4">First-Generation and/or Low-Income Identifying Students
 							<ul>
 								<li>The DEI Task force was recently launched in 2022-2023 to help identify the needs of BIPOC and First-Gen Students at Kellogg.</li>
 								<ul>
-									<li>Solution(s):</li>
-									<li>Work with DEI-Task force, Chris Marosi (Admin overseeing DEI Task Force), administration to <u>address needs of First-Generation Students</u> such as community building, mental health support (think imposter syndrome), personal finance (supporting oneself and family), risk taking, and alumni connections.</li>
-									<li>Work with administration on <u>addressing financial barriers</u> limiting students from experiencing the full Kellogg experience such as the huge financial burden of KWEST (attendee and leader), GIM class, club, and social events.</li>
+									<li>Action(s):</li>
+									<ul>
+										<li>Work with DEI-Task force and administration to address the needs of First-Generation Students e.g., community building, mental health support, personal finance, risk taking, and alumni connections.</li>
+										<li>Work with administration on addressing the financial barriers that limit students from experiencing the full Kellogg experience (marquee events, experiential classes, etc.)</li>
+									</ul>
 								</ul>
 							</ul>
 						</li>
-						<li id="one-y-program" className="pt-4">1Y Program
+						<li id="disc-dei" className="pt-4">Furthering Inclusion
 							<ul>
-								<li>This past class had a heavy distribution of men with similar sports interests and international students able to find their communities.</li>
-								<li>At times, this left women and BIPOC students who can't relate out of the conversations and the out-of-class activities, leaving them feeling isolated, alone, and without community at the start of the Kellogg experience.</li>
+								<li>With the amount of diversity across the Kellogg's communities, we need to ensure there is inclusion and belonging throughout.</li>
 								<ul>
-									<li>Solution(s):</li>
-									<li>Work with Kellogg administration, leadership, and admissions to ensure there's a more differentiated spread of incoming students within this class</li>
-									<li>Address marketing of the program: MBA is a very expensive and time consuming process. Can the 1Y program be more appealing to women or students of color who don't want to take on more debt or lose an additional year of earnings.</li>
-									<li>Highlight the experience, the payoff, and the growth opportunity.</li>
-									<li>More marketing around why the 1Y program is a right fit for students across backgrounds.</li>
-								</ul>
-							</ul>
-						</li>
-						<li id="disc-dei" className="pt-4">Discrimination, Microaggressions, and DEI
-							<ul>
-								<li>Our female, BIPOC, international, LGBTQIA+, and disabled classmates are still facing barriers, lack of inclusion, and at times microaggressions throughout their Kellogg experience.</li>
-								<ul>
-									<li>Solution(s):</li>
-									<li>Leverage the Northwestern system for reporting discrimination or harassment with students, faculty, and staff (this includes CMC staff), make our student body aware of this system at CIM or another early-onboarding event, make it easily accessible for all students, and work with administration to address solutions to issues that arise on a case-by-case basis. We need accountability and we need it now. (<a href="https://cm.maxient.com/reportingform.php?NorthwesternUniv&layout_id=32">https://cm.maxient.com/reportingform.php?NorthwesternUniv&layout_id=32</a>)</li>
-									<li><u>DEI Classes at Kellogg</u> are often taken by a self-selected group and are still not addressing the basics and understanding of what Diversity, Equity, and Inclusion in the workplace means and the importance of it at Kellogg and in business and society. Promote the need for it via student mid-point and exit surveys and work with VP of Academics and Administration to get DEI core class approved.</li>
+									<li>Action(s):</li>
+									<ul>
+										<li>Work with administration to lay the groundwork for including a DEI class in the core curriculum.</li>
+									</ul>
 								</ul>
 							</ul>
 						</li>
@@ -205,13 +221,17 @@ function DeiPage() {
 							<ul>
 								<li>Collaboration across affinity and regional groups allows for student groups to come together and find commonalities in their shared experiences, while also providing the space to open discussions about differences to shed light on them through a lens of understanding and empathy.</li>
 								<ul>
-									<li>Solution(s):</li>
-									<li>Work with <u>Allyship Council and Affinity and Regional group leaders</u> to facilitate more cross-collaboration across student groups, identify man-power to take charge of events, combine financial resources, enhance personal and professional networks.</li>
+									<li>Action(s):</li>
+									<ul>
+										<li>Work with <u>Allyship Council and Affinity and Regional group leaders</u> to facilitate more cross-collaboration across student groups, identify man-power to take charge of events, combine financial resources, enhance personal and professional networks.</li>
+									</ul>
 								</ul>
 								<li>Collaboration across affinity, regional, and professional groups also has the benefits of combined communities, networks, and monetary resources.</li>
 								<ul>
-									<li>Solution(s):</li>
-									<li>Work with the VP of Professional and Personal Development to facilitate <u>collaboration across professional and affinity and regional clubs </u> to source different alumni and industry speakers that would benefit the greater Kellogg student body. </li>
+									<li>Action(s):</li>
+									<ul>
+										<li>Work with the VP of Professional and Personal Development to facilitate <u>collaboration across professional and affinity and regional clubs </u> to source different alumni and industry speakers that would benefit the greater Kellogg student body. </li>
+									</ul>
 								</ul>
 							</ul>
 						</li>

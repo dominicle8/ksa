@@ -65,10 +65,10 @@ nav {
 nav .navbar-nav a {
 	color: white;
 	&:hover {
-		color: #4A4A4A;
+		color: #FFC107;
 	}
 	&.active:hover {
-		color: #4A4A4A;
+		color: #FFC107;
 	}
 	
 	@include media-breakpoint-up(xl) {
@@ -83,7 +83,7 @@ nav .navbar-nav a {
 			align-items: center !important;
 			a {
 				&:hover {
-					color: #4A4A4A;
+					color: #FFC107;
 				}
 			}
 			&:hover {
@@ -114,13 +114,13 @@ nav .navbar-nav a {
 			background: black !important;
 			color: white !important;
 			&:hover {
-				color: #4A4A4A !important;
+				color: #FFC107 !important;
 			}
 			&.active {
 				background: black !important;
 				color: white !important;
 				&:hover {
-					color: #4A4A4A !important;
+					color: #FFC107 !important;
 				}
 			}
 		}

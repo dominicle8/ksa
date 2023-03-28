@@ -1,6 +1,7 @@
 import { Image, Nav, Navbar, NavDropdown, NavItem, Offcanvas} from 'react-bootstrap';
 import SlackLogo from './static/images/slack-mark-white.svg'
 import InstagramLogo from './static/images/Instagram_Glyph_White.svg'
+import InstagramLogoGold from './static/images/Instagram_Glyph_gold.svg'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { MouseEvent, MouseEventHandler, useEffect, useRef, useState } from 'react';
