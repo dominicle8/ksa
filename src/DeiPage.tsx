@@ -219,7 +219,7 @@ function DeiPage() {
 						</li>
 						<li id="cross-collab" className="pt-4">Cross Collaboration Across Student Groups
 							<ul>
-								<li>Collaboration across affinity and regional groups allows for student groups to come together and find commonalities in their shared experiences, while also providing the space to open discussions about differences to shed light on them through a lens of understanding and empathy.</li>
+								<li>Collaboration across affinity and regional groups allows for student groups to come together and find commonalities in their shared experiences, while also providing the space to open discussions about differences through a lens of understanding and empathy.</li>
 								<ul>
 									<li>Action(s):</li>
 									<ul>
@@ -237,7 +237,6 @@ function DeiPage() {
 						</li>
 						<li id="inc-students" className="pt-4">Incoming Students
 							<ul>
-								<li>Set forth <u>guidelines and best practices for clubs to proactively reach out to incoming students</u>, building out the communities they’re excited for sooner and getting ahead of the information overload curve.</li>
 								<li>Work with KWEST Exec, DAK Exec, and CIM Exec to review guidelines for ensuring <u>diversity and inclusion is at the forefront of programming</u> and that there are systems in place for accountability and anonymously providing feedback on DEI during these onboarding events.</li>
 							</ul>
 						</li>
