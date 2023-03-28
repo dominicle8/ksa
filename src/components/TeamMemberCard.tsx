@@ -1,10 +1,7 @@
 import React, { ChangeEvent, useState} from 'react';
-import logo from './logo.svg';
+import plus from '../static/images/plus.svg';
 import Button from 'react-bootstrap/Button';
 import { Col, Container, Row, Image, Form, Card} from 'react-bootstrap';
-import seth from './static/images/seth_laugh.jpg';
-import testpng from '../static/images/test.png';
-import sethLaugh from '../static/audio/seth.mp3';
 
 interface TeamMemberProps {
 	name: string;
@@ -30,9 +27,10 @@ function TeamMemberCard({name, title, description, thumbnailPath}: TeamMemberPro
 				<div style={{paddingBottom: "133.333%", position: "relative"}} className={"card-flip" + (isFlipped ? " is-flipped" : "")} onClick={toggleFlipped}>
 					<div className="card__face card__face--front">
 						<Image src={thumbnail} fluid className='pb-3 w-100 darken-hover' style={{position: "absolute"}}/>
-						<div className="position-absolute bottom-0 text-light w-100"style={{backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
+						<div className="position-absolute bottom-0 text-light w-100"style={{backgroundColor: "rgba(0, 0, 0, 0.5)", pointerEvents:"none"}}>
 							<h4 className='mb-0 p-3 pb-0'>{name}</h4>
 							<p className='mb-0 p-3 pt-0 pb-2'>{title}</p>
+							<Image src={plus} className='position-absolute' style={{bottom: "1.5rem", right: "10px"}}/>
 						</div>
 					</div>
 					<div className="card__face card__face--back secondary-bg d-flex h-100 w-100" style={{overflow: "scroll", overflowX: "hidden", overflowY: "auto"}}>
