@@ -74,6 +74,9 @@ function Navigation() {
 							<LinkContainer to="/pillars">
 								<NavDropdown.Item>Overview</NavDropdown.Item>
 							</LinkContainer>
+							<LinkContainer to="/initiatives">
+								<NavDropdown.Item>Initiatives</NavDropdown.Item>
+							</LinkContainer>
 							<LinkContainer to="/dei">
 								<NavDropdown.Item>DEI @ Kellogg</NavDropdown.Item>
 							</LinkContainer>

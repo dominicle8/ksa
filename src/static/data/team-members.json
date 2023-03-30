@@ -15,42 +15,79 @@
 		"name": "Sam Elmer",
 		"title": "VP of Academics",
 		"description": "Academics have been an integral piece of my time at Kellogg. They can add a lot of value but can also add clutter and stress to the MBA experience, especially during the bidding process! I am committed to giving a voice to student’s opinions on academics as I interface with the administration and faculty.",
-		"thumbnailPath": "sam.jpeg"
+		"thumbnailPath": "sam.jpeg",
+		"initiatives": [
+			"Continue groundwork laid by current VP of Tech and Academics on Canvas Standardization.",
+			"Pilot standardized mid-quarter feedback and review of changes made, work towards implementation across classes.",
+			"Ensure the supply of popular classes meets demand of students."
+		]
 	},
 	{
 		"name": "Cassandra Esinaulo",
 		"title": "VP of Careers",
 		"description": "As an international student pivoting industries, recruiting was a major factor in my decision to come to Kellogg. It was a learning curve to translate my prior experience in an impactful way during conversations at networking events. I aim to pay that forward by further collaborating with the CMC and club leaders to ensure all students feel prepared for recruiting in either traditional or non-traditional career paths. I am passionate about career development and want the Kellogg community to get job opportunities that align with their post-MBA career goals.",
-		"thumbnailPath": "cassandra.jpeg"
+		"thumbnailPath": "cassandra.jpeg",
+		"initiatives": [
+			"Host career-focused workshops over the summer for students who want to get ahead on fall recruiting; concurrently provide additional support for early minority recruiting timelines.",
+			"Collaborate with club leaders and the CMC to provide first-year students with career progression plan so students can explore different career options with a better understanding.",
+			"Proactively support students re-recruiting throughout the fall and winter through workshops and cross-professional club activities.",
+			"Organize networking events specifically for international students with companies that sponsor visas; invite internationalalumni to share best practices"
+		]
 	},
 	{
 		"name": "Aaren Barge",
 		"title": "VP of Clubs and Finance",
 		"description": "I’m running because in my Kellogg journey, clubs have been one of the most important ways to build communities and connect between diverse backgrounds and interests. I discovered a totally new career path through my involvement in Kellogg’s professional clubs, and have grown tremendously as a professional, friend, and ally as I have engaged with the incredible diversity fostered within our affinity groups and regional clubs. As VP of Clubs and Finance, I want to make sure KSA continues to deliver resources to encourage clubs to grow, innovate, create new opportunities and connect even more deeply across all of Kellogg’s communities.",
-		"thumbnailPath": "aaren.jpeg"
+		"thumbnailPath": "aaren.jpeg",
+		"initiatives": [
+			"Facilitate the creation of more opportunities for inter-club professional and social connectivity.",
+			"Create a set of guidelines for clubs to proactively reach out to incoming students in the summer to facilitate the building of communities earlier.",
+			"Expand opportunities for allyship and learning between affinity groups and the entire Kellogg community by partnering with club leadership to design new events and programs that advance the priorities of each individual club.",
+			"Work with VP of Social to organize a Multicultural Fair (club fair round 2) during winter or spring post the bulk of recruiting that encourages continuous discovery and exploration across Kellogg communities and reduces some pressure to over-commit during Fall quarter."
+		]
 	},
 	{
 		"name": "Goro Suzuki",
 		"title": "VP of Global Affairs",
 		"description": "As a parent from another country, I encountered numerous struggles during my first year at Kellogg. My friends helped me overcome these challenges and encouraged me to step up more often – I aim to pay it forward by serving as a bridge between international and local students. Despite the diversity of the student body, we sometimes tend to remain in our own bubbles. By creating intentional opportunities for learning and engagement from one another, I envision Kellogg becoming a more inclusive community of international and local students that help each other grow into more empathetic and inclusive leaders.",
-		"thumbnailPath": "goro.jpeg"
+		"thumbnailPath": "goro.jpeg",
+		"initiatives": [
+			"Refine and improve current initiatives from this year: refresh International Student Guide; lead Global Spoon events with focus on collaboration between clubs and encourage students to learn about different cultural foods; organize exchange student mixer; stand up Global Entrepreneur In Residence program to support visa application process for students interested in a start-up career.",
+			"Create safe and fun events where members from different backgrounds (cultural, regional, faith) can mingle and learn from each other and all groups have equal representation."
+		]
 	},
 	{
 		"name": "Will Engellenner",
 		"title": "VP of Personal & Professional Development",
 		"description": "One of the best things about Kellogg is that we are constantly encouraged to bring our best selves – for classes, recruiting, student groups, our families, and even in social circles. While we're all ultimately here to better ourselves and our business acumen, frequent challenges have trade-offs and can take a toll on well-being. I'm running for KSA VP of Personal & Professional Development because I'm passionate about giving every student the resources they need to succeed at Kellogg, whether that means concrete skills-based training to succeed in coursework and recruiting, or coordinated resources to support overall mental well-being.",
-		"thumbnailPath": "will.jpeg"
+		"thumbnailPath": "will.jpeg",
+		"initiatives": [
+			"Supplement the already robust personal development initiatives with additional opportunities for hard-skill training",
+			"Collaborate with KSA Technology and organizations like KDA and K Tech to provide greater primer resources (such as excel training) for foundational classes Fin 1",
+			"Introduce formal leadership summits or SGD series to foster greater connection and share learnings between leaders ofdisparate student groups."
+		]
 	},
 	{
 		"name": "Tanjeria Crite",
 		"title": "VP of Social",
 		"description": "Social is not just about parties but about how we create meaningful connections and memories. I want to continue our treasured traditions and incorporate new elements that increase inclusion. I first noticed KSA Social as a way to support student bonding when an opportunity to volunteer to help with the Global Gala event came about. I was excited to help because I saw the event as a celebration of the many rich cultures represented in our student body. As an MMM, I was able to learn about KSA Social over the summer as a volunteer and eventually work as a KSA Social First Year Director. If selected, I will use my experience from serving in a first year capacity, my creativity that’s fueled by empathy, and suggestions from the student body to help craft fun social opportunities that strengthen student bonding.",
-		"thumbnailPath": "tangeria.jpeg"
+		"thumbnailPath": "tangeria.jpeg",
+		"initiatives": [
+			"Foster connections through the many traditional Kellogg events while incorporating other methods of engagement beyond these large-scale events",
+			"Partner with the other VPs to ensure event inclusivity such as incorporating more diverse playlists, food and beverage options, structured pricing etc.",
+			"Keep experience at the forefront of planning so that attendees have a multitude of ways to enjoy an event (e.g., including captivating decor, games, entertainment, and more at parties)",
+			"Optimize logistics around ticketing and pricing"
+		]
 	},
 	{
 		"name": "Ruta Patel",
 		"title": "VP of Technology",
 		"description": "As a first year director on KSA Tech, I had the opportunity to help lay the groundwork for multiple initiatives to enhance the student experience. I will continue to iterate on initiatives like Analytics for Inclusion to foster connections between students from different backgrounds and work with KIS to resolve gaps in technology tools. Technology is ubiquitous and as VP of Technology, I am passionate about improving how students leverage technology at Kellogg.",
-		"thumbnailPath": "ruta.jpeg"
+		"thumbnailPath": "ruta.jpeg",
+		"initiatives": [
+			"Push forward existing projects like Canvas standardization while also laying the groundwork for initiatives that can improve accessibility and use of technology for current and future classes (e.g., collaborating with KSA Careers to make CMC resources more user-friendly)",
+			"Iterate and expand on the Analytics for Inclusion initiative to foster additional connections between students with diversebackgrounds",
+			"Partner with KIS to improve access to information on frequently used tools and Kellogg resources"
+		]
 	}
 ]

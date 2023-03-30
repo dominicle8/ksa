@@ -7,6 +7,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom"
 import ScrollToTop from './components/ScrollToTop';
 import DeiPage from './DeiPage';
+import InitiativesPage from './InitiativesPage';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Content/>}></Route>
 						<Route path="/pillars" element={<PillarsPage/>}></Route>
+						<Route path="/initiatives" element={<InitiativesPage/>}></Route>
 						<Route path="/dei" element={<DeiPage/>}></Route>
 					</Routes>
 				<Feedback/>
