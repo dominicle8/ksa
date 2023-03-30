@@ -61,7 +61,7 @@ function PillarsPage() {
 				<Col md={6} className="d-flex" style={{backgroundColor:"#EEEEEE"}}>
 					<div className="align-items-center ms-auto me-auto my-auto pillar-square">
 						<h3 style={{}} className="display-6"><b>Strengthening the Alumni Connection</b></h3>
-						<p style={{}} className="lead">A gap in Kellogg programming is preparing students to be alumni. We will help second years and 1Y transition into becoming proud Kellogg alumni by hosting alumni panels to speak on topics like: how to organize post-MBA finances (loans, apartment, side hustles) etc. and what jobs look like 2/3/x years working out of Kellogg. Having current alumni back on campus will strengthen the already amazing Kellogg connection. We're excited to help elevate Kellogg's brand name and show the world what a high impact, low ego leader is made of!</p>
+						<p style={{}} className="lead">A gap in Kellogg programming is preparing students to be alumni. We will help second years and 1Y transition into becoming proud Kellogg alumni by hosting alumni panels to speak on topics like: how to organize post-MBA finances (loans, mortgages, side hustles) etc. and what jobs look like 2/3/x years working out of Kellogg. Having current alumni back on campus will strengthen the already amazing Kellogg connection. We're excited to help elevate Kellogg's brand name and show the world what a high impact, low ego leader is made of!</p>
 					</div>
 				</Col>
 				<Col md={6} className="p-0">
